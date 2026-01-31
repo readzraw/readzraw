@@ -1,0 +1,30 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif; }
+body { background:#f0f0f0; color:#333; line-height:1.6; }
+
+#hero {
+    display:flex; flex-direction:column; justify-content:center; align-items:center;
+    height:100vh; background:#0f0f0f; color:#fff; text-align:center; animation:fadeIn 2s ease-in;
+}
+#hero .logo { width:100px; border-radius:50%; margin-bottom:20px; }
+.animated-text { font-size:3rem; margin-bottom:10px; }
+.cpp-touch { color:#ff4d4d; animation:colorPulse 1.5s infinite; }
+.ceo { font-size:1.2rem; font-weight:500; margin-bottom:10px; }
+.intro { max-width:500px; }
+
+#projects { padding:50px 20px; text-align:center; background:#fff; }
+.projects-grid { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:20px; }
+.project { background:#0f0f0f; color:#fff; padding:30px 20px; border-radius:10px; min-width:150px; }
+
+#services { padding:50px 20px; text-align:center; background:#f9f9f9; }
+.service-options { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:30px; }
+.service-card { background:#fff; padding:30px 20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); width:300px; transition:transform 0.3s; }
+.service-card:hover { transform:translateY(-10px); }
+.contact-btn { display:inline-block; margin-top:15px; padding:10px 20px; background:#0f0f0f; color:#fff; border-radius:5px; text-decoration:none; transition:background 0.3s; }
+.contact-btn:hover { background:#ff4d4d; }
+
+#contact { padding:50px 20px; text-align:center; background:#0f0f0f; color:#fff; }
+#contact a { color:#ff4d4d; text-decoration:none; }
+#contact a:hover { text-decoration:underline; }
+
+@keyframes fadeIn { from {opacity:0} to {opacity:1} }
+@keyframes colorPulse { 0%,100%{color:#ff4d4d} 50%{color:#ff9900} }
